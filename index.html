@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Novos Usuários</title>
+</head>
+<style>
+
+    body{       
+        margin-top: 5%;
+        background-color: #a7a9aa;
+     }
+
+    .divprincipal{
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    h2{ 
+        margin-top: 25px;
+    }
+
+</style>
+
+<body>
+    <div class="divprincipal">
+        <h1>Registre-se</h1>
+
+        <form action="#">
+
+            <!-- Nome (Text) -->
+            <label for="usuario"> Usuário: </label>
+            <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuário" required>
+
+            <!-- Data de Nascimento (Data) --><br><br>
+            <label for="nascimento"> Data de Nascimento: </label>
+            <input type="date" name="nascimento" id="nascimento" required>
+
+            <!-- Senha (Password)--><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="******" required>
+
+            <!-- E-mail (E-mail)--> <br><br>
+            <label for="Email">E-mail:</label>
+            <input type="email" name="Email" id="Email" placeholder="example@example.com" required>
+
+            <!-- Sexo (radiobutton)-->
+            <p>Gênero:</p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="masculino" id="masculino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="feminino" id="feminino">      
+
+            <!-- Interesses (Checkbox)-->
+            <h2>Selecione seus interesses:</h2> 
+            <label for="noticias">Notícias:</label>
+            <input type="checkbox" name="noticias" id="noticias">
+            <label for="comedia">Comédia:</label>
+            <input type="checkbox" name="comedia" id="comedia">
+            <label for="esportes">Esportes:</label>
+            <input type="checkbox" name="esportes" id="esportes"><br><br>
+            <label for="filmes">Filmes:</label>
+            <input type="checkbox" name="filmes" id="filmes">
+            <label for="receitas">Receitas:</label>
+            <input type="checkbox" name="receitas" id="receitas">
+            
+            <br><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+    
+    
+        </form>
+    </div>
+
+</body>
+</html>
